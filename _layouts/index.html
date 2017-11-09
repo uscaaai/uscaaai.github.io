@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activities</title>
+    {% include header.html %}
+
+</head>
+<body>
+{% include navbar.html %}
+<div class="container">
+    <div  class="secHeader" style="margin-left: 100px"><h1>Activities</h1></div>
+    {% for post in site.categories.activity %}
+
+    <div class="row" style="padding: 25px 0 25px 0; border-top: #e4e4e4 solid 1px;border-bottom: #e4e4e4 solid 1px;">
+        <div class="col-sm-3">
+            <img src="{{ post.preview }}" style="height: 200px; width: auto">
+        </div>
+        <div class="col-sm-9">
+            <h2>{{ post.title }}</h2>
+            <div style="font-size: 17px">{{ post.excerpt | slice: 0,200 }}......</div>
+            <div class="row" style="margin-top: 30px">
+                <div class="col-sm-3 col-sm-offset-9">
+                    <a class="btn btn-primary" href="{{ post.url|absolute_url }}">Watch Details -></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+
+{% include footer.html %}
+</body>
+</html>

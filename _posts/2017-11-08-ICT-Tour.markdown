@@ -1,0 +1,9 @@
+---
+layout: activities
+title:  "An ICT Tour!"
+date:   2017-10-08 14:27:46 -0800
+categories: activity
+permalink: /icttour/
+preview: http://blogs-images.forbes.com/louiscolumbus/files/2017/07/AI-Image-for-post.jpg
+---
+We went to ICT tour in October. That was fantastic.
