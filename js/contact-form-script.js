@@ -14,24 +14,32 @@ $("#contactForm").validator().on("submit", function (event) {
 function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
-    var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
+    // var email = $("#email").val();
+    // var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
 
-    $.ajax({
-        type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
+    // $.ajax({
+    //     type: "POST",
+    //     url: "php/form-process.php",
+    //     data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+    //     success : function(text){
+    //         if (text == "success"){
+    //             formSuccess();
+    //         } else {
+    //             formError();
+    //             submitMSG(false,text);
+    //         }
+    //     }
+    // });
+    var link = "mailto:aaai.usc@gmail.com"
+             + "?subject=" + escape("AAAI Website Message")
+             + "&body=" + escape("Hi AAAI@USC team,\n\n" + message + "\n\nBest,\n\n" + name);
+
+    window.location.href = link;
+
+    $("#name").val("");
+    $("#message").val("");
 }
 
 function formSuccess(){
