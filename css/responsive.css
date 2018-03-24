@@ -30,8 +30,15 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
 
+  .copyright {
+    float: left;
+  }
+  .copyright p {
+    font-size: 10px;
+  }
+}
+  
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .section {
