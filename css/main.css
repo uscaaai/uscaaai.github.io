@@ -427,8 +427,15 @@ button:focus {
 
 #hero-area .contents h1 {
   color: #fff;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#hero-area .contents h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 25px;
 }
 
@@ -1038,6 +1045,12 @@ button:focus {
 
 .single-team img {
   width: 100%;
+  height: 100%;
+  background-size: cover;
+
+/*  height: 100%;      full height of the content box 
+  max-height: 20em;
+*/
 }
 
 .single-team .team-inner {
