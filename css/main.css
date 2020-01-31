@@ -52,7 +52,7 @@ html {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 26px;
 }
 
@@ -427,14 +427,14 @@ button:focus {
 
 #hero-area .contents h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 54px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 
 #hero-area .contents h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 25px;
 }
@@ -612,7 +612,7 @@ button:focus {
 .item-boxes {
   text-align: center;
   padding: 0px 15px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -625,7 +625,7 @@ button:focus {
   border: 1px solid #f1f1f1;
   display: inline-block;
   border-radius: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -638,7 +638,7 @@ button:focus {
 }
 
 .item-boxes h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -1029,12 +1029,16 @@ button:focus {
 /* ==========================================================================
   12. Team Section
    ========================================================================== */
+
+/*#team .section-subtitle p {
+  font-size: 20px;
+}*/
+
 .single-team:hover .team-details {
   opacity: 1;
 }
 
 .single-team {
-  position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -1053,11 +1057,11 @@ button:focus {
 */
 }
 
-.single-team .team-inner {
+/*.single-team .team-inner {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
+*/
 .single-team .team-details {
   text-align: center;
   -webkit-transition: 0.5s;
@@ -1065,26 +1069,21 @@ button:focus {
   transition: 0.5s;
   border-radius: 0px;
   background: #f1f1f1;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .single-team .team-details .team-title {
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #333;
-  white-space: nowrap;
 }
 
-.single-team .team-details p {
-  color: #333;
-}
-
-.single-team .social-list li {
+.social-list li {
   display: inline-block;
 }
 
-.single-team .social-list li a {
+.social-list li a {
   display: block;
   height: 34px;
   line-height: 34px;
