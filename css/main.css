@@ -422,7 +422,7 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 130px;
+  padding: 200px 0 50px;
 }
 
 #hero-area .contents h1 {
@@ -448,7 +448,7 @@ button:focus {
 }
 
 #hero-area .contents .btn {
-  margin: 25px 25px 0px 0px;
+  margin: 15px 25px 0px 25px;
   text-transform: uppercase;
 }
 
