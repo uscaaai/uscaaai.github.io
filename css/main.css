@@ -20,7 +20,7 @@
   4. NAVBAR
   5. ABOUT SECTION
   6. OFFICERS SECTION
-  7. VIDEO PROMO SECTION
+  7. Sponsors SECTION
   8. PORTFOLIO SECTION
   9. PRICING TABLE 
   10. COUNTER SECTION
@@ -52,7 +52,7 @@ html {
 }
 
 p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 26px;
 }
 
@@ -101,7 +101,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    2.1 Section Title
    ========================================================================== */
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .section-header {
@@ -380,7 +380,7 @@ button:focus {
 .back-to-top {
   display: none;
   position: fixed;
-  bottom: 18px;
+  bottom: 10px;
   right: 15px;
 }
 
@@ -422,19 +422,19 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 130px;
+  padding: 200px 0 50px;
 }
 
 #hero-area .contents h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 54px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 
 #hero-area .contents h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 25px;
 }
@@ -448,7 +448,7 @@ button:focus {
 }
 
 #hero-area .contents .btn {
-  margin: 25px 25px 0px 0px;
+  margin: 15px 25px 0px 25px;
   text-transform: uppercase;
 }
 
@@ -612,7 +612,7 @@ button:focus {
 .item-boxes {
   text-align: center;
   padding: 0px 15px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -625,7 +625,7 @@ button:focus {
   border: 1px solid #f1f1f1;
   display: inline-block;
   border-radius: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -638,7 +638,7 @@ button:focus {
 }
 
 .item-boxes h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -735,62 +735,50 @@ button:focus {
 }
 
 /* ==========================================================================
-  7. Video promo Style
+  7. Sponsors Style
    ========================================================================== */
-.video-promo {
-  background: #00ACE9;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
+.sponsors {
+    background-color: #fff;
 }
 
-.video-promo .video-promo-content {
-  color: #fff;
+.sponsors .section-header{
+    margin-bottom: 10px;
 }
 
-.video-promo .video-promo-content h2 {
-  color: #fff;
+.sponsors .sponsors-content h2 {
+  color: #111;
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
-.video-promo .video-promo-content p {
-  margin-bottom: 30px;
-}
-
-.video-promo .video-promo-content .video-popup {
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  border: 3px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 30px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.video-promo .video-promo-content .video-popup i {
-  line-height: 72px;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #00ACE9;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
 
 /* ==========================================================================
   8. Portfolio Section
    ========================================================================== */
+#portfolios .section-header .lines{
+  padding-bottom: 30px;
+}
+
+#portfolios .current-events{
+  color: #111;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+#portfolios .current-events h3{
+  font-size: 36px;
+}
+
+#portfolios .current-events h2{
+  padding-top: 0px;
+  font-size: 24px;
+}
+
+#portfolios .current-events .lines{
+   width: 100%; 
+   margin-top: 0px;
+}
+
 #portfolios .mix {
   padding: 10px;
 }
@@ -1029,12 +1017,16 @@ button:focus {
 /* ==========================================================================
   12. Team Section
    ========================================================================== */
+
+/*#team .section-subtitle p {
+  font-size: 20px;
+}*/
+
 .single-team:hover .team-details {
   opacity: 1;
 }
 
 .single-team {
-  position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -1053,11 +1045,11 @@ button:focus {
 */
 }
 
-.single-team .team-inner {
+/*.single-team .team-inner {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
+*/
 .single-team .team-details {
   text-align: center;
   -webkit-transition: 0.5s;
@@ -1065,26 +1057,21 @@ button:focus {
   transition: 0.5s;
   border-radius: 0px;
   background: #f1f1f1;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .single-team .team-details .team-title {
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #333;
-  white-space: nowrap;
 }
 
-.single-team .team-details p {
-  color: #333;
-}
-
-.single-team .social-list li {
+.social-list li {
   display: inline-block;
 }
 
-.single-team .social-list li a {
+.social-list li a {
   display: block;
   height: 34px;
   line-height: 34px;
@@ -1221,11 +1208,11 @@ button:focus {
  ========================================================================== */
 footer {
   background: #292f35;
-  padding: 20px 0;
+  padding: 0px;
 }
 
 .footer-links {
-  line-height: 48px;
+  line-height: 56px;
 }
 
 .footer-links li {
@@ -1245,7 +1232,7 @@ footer {
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 15px;
   float: right;
 }
 
